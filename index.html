@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV N'GUESSAN KOUADIO DAVID</title>
+    <link rel="stylesheet" href="meta/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,700,900&display=swap" rel="stylesheet">
+    <style>
+      /* Ajout pour la photo de profil ronde */
+      .profile-photo {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #3b82f6;
+        margin: 0 auto 2rem auto;
+        display: block;
+        box-shadow: 0 8px 32px rgba(59,130,246,0.25);
+        background: #fff;
+      }
+      .hero-description {
+        color: #e2e8f0;
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .main-image {
+        width: 100%;
+        max-width: 600px;
+        margin: 2rem auto 2rem auto;
+        display: block;
+        border-radius: 24px;
+        box-shadow: 0 8px 32px rgba(59,130,246,0.15);
+      }
+      .download-btn {
+        margin: 2rem auto 0 auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.1rem;
+      }
+    </style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="bg-container"></div>
+    <div class="bg-overlay"></div>
+    <div class="particles" id="particles"></div>
+
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header" id="header">
+            <nav class="nav">
+                <a href="#" class="logo">CV N'GUESSAN</a>
+                <ul class="nav-links">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- Mobile menu toggle button (optional) -->
+                <button class="btn btn-secondary" style="display:none;" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <img src="docu/nguessan1.jpg" alt="Photo de N'Guessan Kouadio David" class="profile-photo">
+                <h1 class="hero-title" id="typewriter"></h1>
+                <div class="hero-description">
+                     passionné par le développement web, l’innovation et la résolution de problèmes complexes. Fort d’une expérience en conception d’applications performantes et d’une grande curiosité pour les technologies émergentes. Motivé, créatif et orienté résultats.
+                </div>
+                <img src="docu/CV-NGUESSAN KOAUDIO DAVID.PNG" alt="Illustration principale" class="main-image" />
+                <a href="docu/CV-NGUESSAN KOUADIO DAVID .pdf" class="btn btn-primary download-btn" download>
+                    <i class="fas fa-download"></i> Télécharger le CV (PDF)
+                </a>
+            </div>
+        </section>
+
+        <!-- Optionally, add more sections for skills, projects, contact, etc. -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email : <a href="mailto:debadychatue@email.com">debadychatue@email.com</a></p>
+                <p>Email : <a href="mailto:startup@explora-studio.com">startup@explora-studio.com</a></p>
+                <p>Téléphone : +225 005 44 70 485 4 | + 225 07 02 45 00 22</p>
+                <div class="social-links">
+                    <a href="www.linkedin.com/in/n-guessan-david-b7b148308" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/debady" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>CV interactif réalisé avec passion.<br>© 2025 N'Guessan Kouadio David.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="meta/script.js"></script>
+    <script>
+      // Animation d'écriture du nom
+      document.addEventListener('DOMContentLoaded', function() {
+        const el = document.getElementById('typewriter');
+        typeWriter(el, "CV N'GUESSAN KOUADIO DAVID", 90);
+      });
+    </script>
+</body>
+</html>
